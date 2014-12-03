@@ -1,31 +1,33 @@
 AWSTemplateFormatVersion: 2010-09-09
 Description: CoreOS stack
 
-# Mappings
-# =================================================
+# Mappings - updated Dec 3, 2014 - stable channel 444.5.0
+# =======================================================
 
 Mappings:
   RegionMap:
-    eu-west-1:
-      ami: ami-8368adf4
-    us-east-1:
-      ami: ami-3becf652
-    us-west-1:
-      ami: ami-e4dde5a1
-    us-west-2:
-      ami: ami-388bfe08
-    ap-southeast-1:
-      ami: ami-28bdee7a
-    ap-southeast-2:
-      ami: ami-7d2fb747
+    eu-central-1:
+      ami: ami-e8c6f0f5
     ap-northeast-1:
-      ami: ami-fb5822fa
+      ami: ami-8f330c8e
     sa-east-1:
-      ami: ami-83c76a9e
+      ami: ami-4d2a9d50
+    ap-southeast-2:
+      ami: ami-a70b649d
+    ap-southeast-1:
+      ami: ami-d66e4d84
+    us-east-1:
+      ami: ami-48951a20
+    us-west-2:
+      ami: ami-7f31794f
+    us-west-1:
+      ami: ami-4dd3c408
+    eu-west-1:
+      ami: ami-58d47e2f
 
 
 # Parameters
-# =================================================
+# =======================================================
 
 Parameters:
   InstanceType:
@@ -63,7 +65,7 @@ Parameters:
 
 
 # Resources
-# =================================================
+# =======================================================
 
 Resources:
 
@@ -225,7 +227,7 @@ Resources:
 
 
 # Outputs
-# =================================================
+# =======================================================
 
 Outputs:
   AccessKeyId:
